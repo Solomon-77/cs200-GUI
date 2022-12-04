@@ -7,12 +7,12 @@
  *
  * @author Eustaquio
  */
-public class AddEmployeeScreen extends javax.swing.JFrame {
+public class AddCustomerScreen extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public AddEmployeeScreen() {
+    public AddCustomerScreen() {
         initComponents();
     }
 
@@ -27,13 +27,11 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        addEmployeeBackBtn = new javax.swing.JLabel();
+        addCustomerBackBtn = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        addEmployeeNamelabel = new javax.swing.JLabel();
-        addEmployeeNameTxtField = new javax.swing.JTextField();
-        addEmployeeIDNumlabel = new javax.swing.JLabel();
-        addEmployeeIDNumTxtField = new javax.swing.JTextField();
+        addCustomerNameLabel = new javax.swing.JLabel();
+        addCustomerNameTxtField = new javax.swing.JTextField();
         loginPanel3 = new javax.swing.JPanel();
         addEmployeeNameIDNumBtn = new javax.swing.JLabel();
 
@@ -44,15 +42,15 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
         jLabel4.setBackground(java.awt.Color.red);
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel4.setForeground(java.awt.Color.red);
-        jLabel4.setText("Employee");
+        jLabel4.setText("Customer");
 
-        addEmployeeBackBtn.setBackground(java.awt.Color.white);
-        addEmployeeBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        addEmployeeBackBtn.setForeground(java.awt.Color.white);
-        addEmployeeBackBtn.setText("<");
-        addEmployeeBackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        addCustomerBackBtn.setBackground(java.awt.Color.white);
+        addCustomerBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        addCustomerBackBtn.setForeground(java.awt.Color.white);
+        addCustomerBackBtn.setText("<");
+        addCustomerBackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                addEmployeeBackBtnMouseClicked(evt);
+                addCustomerBackBtnMouseClicked(evt);
             }
         });
 
@@ -66,24 +64,23 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(addEmployeeBackBtn)
-                .addContainerGap(225, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(91, 91, 91))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(48, 48, 48))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(addCustomerBackBtn))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(94, 94, 94)
+                        .addComponent(jLabel8))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(jLabel4)))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(addEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(addCustomerBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -93,11 +90,8 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(76, 17, 123));
 
-        addEmployeeNamelabel.setForeground(new java.awt.Color(255, 0, 0));
-        addEmployeeNamelabel.setText("Name of Employee");
-
-        addEmployeeIDNumlabel.setForeground(new java.awt.Color(255, 0, 0));
-        addEmployeeIDNumlabel.setText("Employee ID Number");
+        addCustomerNameLabel.setForeground(new java.awt.Color(255, 0, 0));
+        addCustomerNameLabel.setText("Name of Customer");
 
         loginPanel3.setBackground(new java.awt.Color(76, 17, 123));
         loginPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
@@ -110,16 +104,16 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
         addEmployeeNameIDNumBtn.setBackground(java.awt.Color.white);
         addEmployeeNameIDNumBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         addEmployeeNameIDNumBtn.setForeground(java.awt.Color.white);
-        addEmployeeNameIDNumBtn.setText("Add Employee");
+        addEmployeeNameIDNumBtn.setText("Add Customer");
 
         javax.swing.GroupLayout loginPanel3Layout = new javax.swing.GroupLayout(loginPanel3);
         loginPanel3.setLayout(loginPanel3Layout);
         loginPanel3Layout.setHorizontalGroup(
             loginPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loginPanel3Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginPanel3Layout.createSequentialGroup()
+                .addContainerGap(31, Short.MAX_VALUE)
                 .addComponent(addEmployeeNameIDNumBtn)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addGap(29, 29, 29))
         );
         loginPanel3Layout.setVerticalGroup(
             loginPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -133,25 +127,19 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(addEmployeeIDNumTxtField)
-                    .addComponent(addEmployeeIDNumlabel)
-                    .addComponent(addEmployeeNamelabel)
-                    .addComponent(addEmployeeNameTxtField)
+                    .addComponent(addCustomerNameLabel)
+                    .addComponent(addCustomerNameTxtField)
                     .addComponent(loginPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(addEmployeeNamelabel)
+                .addGap(83, 83, 83)
+                .addComponent(addCustomerNameLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(addEmployeeNameTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(addEmployeeIDNumlabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(addEmployeeIDNumTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addComponent(addCustomerNameTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
                 .addComponent(loginPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(46, Short.MAX_VALUE))
         );
@@ -175,11 +163,11 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void addEmployeeBackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addEmployeeBackBtnMouseClicked
+    private void addCustomerBackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addCustomerBackBtnMouseClicked
         Menu main = new Menu();
         main.show();
         this.dispose();
-    }//GEN-LAST:event_addEmployeeBackBtnMouseClicked
+    }//GEN-LAST:event_addCustomerBackBtnMouseClicked
 
     private void loginPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginPanel3MouseClicked
         
@@ -222,22 +210,14 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel addEmployeeBackBtn;
-    private javax.swing.JTextField addEmployeeIDNumTxtField;
-    private javax.swing.JLabel addEmployeeIDNumlabel;
+    private javax.swing.JLabel addCustomerBackBtn;
+    private javax.swing.JLabel addCustomerNameLabel;
+    private javax.swing.JTextField addCustomerNameTxtField;
     private javax.swing.JLabel addEmployeeNameIDNumBtn;
-    private javax.swing.JTextField addEmployeeNameTxtField;
-    private javax.swing.JLabel addEmployeeNamelabel;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel loginLabel;
-    private javax.swing.JLabel loginLabel1;
-    private javax.swing.JLabel loginLabel2;
-    private javax.swing.JPanel loginPanel;
-    private javax.swing.JPanel loginPanel1;
-    private javax.swing.JPanel loginPanel2;
     private javax.swing.JPanel loginPanel3;
     // End of variables declaration//GEN-END:variables
 }
