@@ -28,7 +28,7 @@ public class AddScreen extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         addLabel = new javax.swing.JLabel();
-        addBackPnl = new javax.swing.JLabel();
+        BackBtn = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         addEmployeePnl = new javax.swing.JPanel();
         addEmployeeLabel = new javax.swing.JLabel();
@@ -48,13 +48,13 @@ public class AddScreen extends javax.swing.JFrame {
         addLabel.setForeground(java.awt.Color.red);
         addLabel.setText("Add");
 
-        addBackPnl.setBackground(java.awt.Color.white);
-        addBackPnl.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        addBackPnl.setForeground(java.awt.Color.white);
-        addBackPnl.setText("<");
-        addBackPnl.addMouseListener(new java.awt.event.MouseAdapter() {
+        BackBtn.setBackground(java.awt.Color.white);
+        BackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        BackBtn.setForeground(java.awt.Color.white);
+        BackBtn.setText("<");
+        BackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                addBackPnlMouseClicked(evt);
+                BackBtnMouseClicked(evt);
             }
         });
 
@@ -69,14 +69,14 @@ public class AddScreen extends javax.swing.JFrame {
                         .addComponent(addLabel))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addComponent(addBackPnl)))
+                        .addComponent(BackBtn)))
                 .addContainerGap(98, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(addBackPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(67, 67, 67)
                 .addComponent(addLabel)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -241,11 +241,11 @@ public class AddScreen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void addBackPnlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBackPnlMouseClicked
+    private void BackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackBtnMouseClicked
         Menu main = new Menu();
         main.show();
         this.dispose();
-    }//GEN-LAST:event_addBackPnlMouseClicked
+    }//GEN-LAST:event_BackBtnMouseClicked
 
     private void addEmployeePnlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addEmployeePnlMouseClicked
         AddEmployeeScreen employee = new AddEmployeeScreen();
@@ -308,7 +308,7 @@ public class AddScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel addBackPnl;
+    private javax.swing.JLabel BackBtn;
     private javax.swing.JPanel addBookingBtn;
     private javax.swing.JLabel addBookingPnl;
     private javax.swing.JLabel addCustomerLabel;

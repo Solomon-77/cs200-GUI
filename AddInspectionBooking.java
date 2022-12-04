@@ -20,11 +20,11 @@ public class AddInspectionBooking extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        addPropertyBackBtn = new javax.swing.JLabel();
+        BackBtn = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        addBookingDate = new javax.swing.JPanel();
+        addBookingDateBtn = new javax.swing.JPanel();
         addBookingDateLabel = new javax.swing.JLabel();
         setDateLabel = new javax.swing.JLabel();
         setDateTextField = new javax.swing.JTextField();
@@ -39,13 +39,13 @@ public class AddInspectionBooking extends javax.swing.JFrame {
         jLabel4.setForeground(java.awt.Color.red);
         jLabel4.setText("Inspection");
 
-        addPropertyBackBtn.setBackground(java.awt.Color.white);
-        addPropertyBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        addPropertyBackBtn.setForeground(java.awt.Color.white);
-        addPropertyBackBtn.setText("<");
-        addPropertyBackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        BackBtn.setBackground(java.awt.Color.white);
+        BackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        BackBtn.setForeground(java.awt.Color.white);
+        BackBtn.setText("<");
+        BackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                addPropertyBackBtnMouseClicked(evt);
+                BackBtnMouseClicked(evt);
             }
         });
 
@@ -65,7 +65,7 @@ public class AddInspectionBooking extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(addPropertyBackBtn)
+                .addComponent(BackBtn)
                 .addContainerGap(208, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -84,7 +84,7 @@ public class AddInspectionBooking extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(addPropertyBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -96,11 +96,11 @@ public class AddInspectionBooking extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(76, 17, 123));
 
-        addBookingDate.setBackground(new java.awt.Color(76, 17, 123));
-        addBookingDate.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
-        addBookingDate.addMouseListener(new java.awt.event.MouseAdapter() {
+        addBookingDateBtn.setBackground(new java.awt.Color(76, 17, 123));
+        addBookingDateBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        addBookingDateBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                addBookingDateMouseClicked(evt);
+                addBookingDateBtnMouseClicked(evt);
             }
         });
 
@@ -109,17 +109,17 @@ public class AddInspectionBooking extends javax.swing.JFrame {
         addBookingDateLabel.setForeground(java.awt.Color.white);
         addBookingDateLabel.setText("Add Booking");
 
-        javax.swing.GroupLayout addBookingDateLayout = new javax.swing.GroupLayout(addBookingDate);
-        addBookingDate.setLayout(addBookingDateLayout);
-        addBookingDateLayout.setHorizontalGroup(
-            addBookingDateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addBookingDateLayout.createSequentialGroup()
+        javax.swing.GroupLayout addBookingDateBtnLayout = new javax.swing.GroupLayout(addBookingDateBtn);
+        addBookingDateBtn.setLayout(addBookingDateBtnLayout);
+        addBookingDateBtnLayout.setHorizontalGroup(
+            addBookingDateBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addBookingDateBtnLayout.createSequentialGroup()
                 .addContainerGap(31, Short.MAX_VALUE)
                 .addComponent(addBookingDateLabel)
                 .addGap(29, 29, 29))
         );
-        addBookingDateLayout.setVerticalGroup(
-            addBookingDateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        addBookingDateBtnLayout.setVerticalGroup(
+            addBookingDateBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(addBookingDateLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
         );
 
@@ -134,7 +134,7 @@ public class AddInspectionBooking extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(addBookingDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(addBookingDateBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(setDateLabel)
                     .addComponent(setDateTextField))
                 .addContainerGap(61, Short.MAX_VALUE))
@@ -147,7 +147,7 @@ public class AddInspectionBooking extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(setDateTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(61, 61, 61)
-                .addComponent(addBookingDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(addBookingDateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
@@ -170,15 +170,15 @@ public class AddInspectionBooking extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void addPropertyBackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addPropertyBackBtnMouseClicked
+    private void BackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackBtnMouseClicked
         AddScreen screen = new AddScreen();
         screen.show();
         this.dispose();
-    }//GEN-LAST:event_addPropertyBackBtnMouseClicked
+    }//GEN-LAST:event_BackBtnMouseClicked
 
-    private void addBookingDateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBookingDateMouseClicked
+    private void addBookingDateBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBookingDateBtnMouseClicked
    
-    }//GEN-LAST:event_addBookingDateMouseClicked
+    }//GEN-LAST:event_addBookingDateBtnMouseClicked
 
     /**
      * @param args the command line arguments
@@ -217,9 +217,9 @@ public class AddInspectionBooking extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel addBookingDate;
+    private javax.swing.JLabel BackBtn;
+    private javax.swing.JPanel addBookingDateBtn;
     private javax.swing.JLabel addBookingDateLabel;
-    private javax.swing.JLabel addPropertyBackBtn;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;

@@ -28,13 +28,13 @@ public class PrintProperties extends javax.swing.JFrame {
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel1 = new javax.swing.JPanel();
         backButton = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        goToCustomerBtn = new javax.swing.JPanel();
+        goToCustomerLabel = new javax.swing.JLabel();
+        goToBookingsBtn = new javax.swing.JPanel();
+        goToBookingsLabel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        propertyList = new javax.swing.JList<>();
         jLabel1 = new javax.swing.JLabel();
 
         jInternalFrame1.setVisible(true);
@@ -64,56 +64,56 @@ public class PrintProperties extends javax.swing.JFrame {
             }
         });
 
-        jPanel3.setBackground(new java.awt.Color(76, 17, 123));
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.white, 2));
-        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        goToCustomerBtn.setBackground(new java.awt.Color(76, 17, 123));
+        goToCustomerBtn.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.white, 2));
+        goToCustomerBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel3MouseClicked(evt);
+                goToCustomerBtnMouseClicked(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("Customer");
+        goToCustomerLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        goToCustomerLabel.setForeground(java.awt.Color.white);
+        goToCustomerLabel.setText("Customer");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout goToCustomerBtnLayout = new javax.swing.GroupLayout(goToCustomerBtn);
+        goToCustomerBtn.setLayout(goToCustomerBtnLayout);
+        goToCustomerBtnLayout.setHorizontalGroup(
+            goToCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(goToCustomerBtnLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel2)
+                .addComponent(goToCustomerLabel)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        goToCustomerBtnLayout.setVerticalGroup(
+            goToCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(goToCustomerLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
         );
 
-        jPanel4.setBackground(new java.awt.Color(76, 17, 123));
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.white, 2));
-        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        goToBookingsBtn.setBackground(new java.awt.Color(76, 17, 123));
+        goToBookingsBtn.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.white, 2));
+        goToBookingsBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel4MouseClicked(evt);
+                goToBookingsBtnMouseClicked(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(java.awt.Color.white);
-        jLabel3.setText("Bookings");
+        goToBookingsLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        goToBookingsLabel.setForeground(java.awt.Color.white);
+        goToBookingsLabel.setText("Bookings");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout goToBookingsBtnLayout = new javax.swing.GroupLayout(goToBookingsBtn);
+        goToBookingsBtn.setLayout(goToBookingsBtnLayout);
+        goToBookingsBtnLayout.setHorizontalGroup(
+            goToBookingsBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, goToBookingsBtnLayout.createSequentialGroup()
                 .addContainerGap(20, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addComponent(goToBookingsLabel)
                 .addGap(19, 19, 19))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        goToBookingsBtnLayout.setVerticalGroup(
+            goToBookingsBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(goToBookingsLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -128,8 +128,8 @@ public class PrintProperties extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(85, 85, 85)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(goToBookingsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(goToCustomerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(94, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -138,20 +138,20 @@ public class PrintProperties extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(goToCustomerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(goToBookingsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(76, 17, 123));
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        propertyList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(propertyList);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
         jLabel1.setForeground(java.awt.Color.white);
@@ -206,17 +206,17 @@ public class PrintProperties extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_backButtonMouseClicked
 
-    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+    private void goToCustomerBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToCustomerBtnMouseClicked
         PrintCustomer customer = new PrintCustomer();
         customer.show();
         this.dispose();
-    }//GEN-LAST:event_jPanel3MouseClicked
+    }//GEN-LAST:event_goToCustomerBtnMouseClicked
 
-    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
+    private void goToBookingsBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToBookingsBtnMouseClicked
         PrintBookings bookings = new PrintBookings();
         bookings.show();
         this.dispose();
-    }//GEN-LAST:event_jPanel4MouseClicked
+    }//GEN-LAST:event_goToBookingsBtnMouseClicked
 
     /**
      * @param args the command line arguments
@@ -256,15 +256,15 @@ public class PrintProperties extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel backButton;
+    private javax.swing.JPanel goToBookingsBtn;
+    private javax.swing.JLabel goToBookingsLabel;
+    private javax.swing.JPanel goToCustomerBtn;
+    private javax.swing.JLabel goToCustomerLabel;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JList<String> propertyList;
     // End of variables declaration//GEN-END:variables
 }

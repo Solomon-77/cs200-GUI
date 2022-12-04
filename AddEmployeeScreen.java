@@ -27,15 +27,15 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        addEmployeeBackBtn = new javax.swing.JLabel();
+        BackBtn = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         addEmployeeNamelabel = new javax.swing.JLabel();
         addEmployeeNameTxtField = new javax.swing.JTextField();
         addEmployeeIDNumlabel = new javax.swing.JLabel();
         addEmployeeIDNumTxtField = new javax.swing.JTextField();
-        loginPanel3 = new javax.swing.JPanel();
-        addEmployeeNameIDNumBtn = new javax.swing.JLabel();
+        addEmployeeNameIDBtn = new javax.swing.JPanel();
+        addEmployeeNameIDNumLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -47,13 +47,13 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
         jLabel4.setForeground(java.awt.Color.red);
         jLabel4.setText("Employee");
 
-        addEmployeeBackBtn.setBackground(java.awt.Color.white);
-        addEmployeeBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        addEmployeeBackBtn.setForeground(java.awt.Color.white);
-        addEmployeeBackBtn.setText("<");
-        addEmployeeBackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        BackBtn.setBackground(java.awt.Color.white);
+        BackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        BackBtn.setForeground(java.awt.Color.white);
+        BackBtn.setText("<");
+        BackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                addEmployeeBackBtnMouseClicked(evt);
+                BackBtnMouseClicked(evt);
             }
         });
 
@@ -68,7 +68,7 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(addEmployeeBackBtn)
+                .addComponent(BackBtn)
                 .addContainerGap(225, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -84,7 +84,7 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(addEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -102,31 +102,31 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
         addEmployeeIDNumlabel.setForeground(java.awt.Color.white);
         addEmployeeIDNumlabel.setText("Employee ID Number");
 
-        loginPanel3.setBackground(new java.awt.Color(76, 17, 123));
-        loginPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
-        loginPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        addEmployeeNameIDBtn.setBackground(new java.awt.Color(76, 17, 123));
+        addEmployeeNameIDBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        addEmployeeNameIDBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                loginPanel3MouseClicked(evt);
+                addEmployeeNameIDBtnMouseClicked(evt);
             }
         });
 
-        addEmployeeNameIDNumBtn.setBackground(java.awt.Color.white);
-        addEmployeeNameIDNumBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        addEmployeeNameIDNumBtn.setForeground(java.awt.Color.white);
-        addEmployeeNameIDNumBtn.setText("Add Employee");
+        addEmployeeNameIDNumLabel.setBackground(java.awt.Color.white);
+        addEmployeeNameIDNumLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        addEmployeeNameIDNumLabel.setForeground(java.awt.Color.white);
+        addEmployeeNameIDNumLabel.setText("Add Employee");
 
-        javax.swing.GroupLayout loginPanel3Layout = new javax.swing.GroupLayout(loginPanel3);
-        loginPanel3.setLayout(loginPanel3Layout);
-        loginPanel3Layout.setHorizontalGroup(
-            loginPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loginPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout addEmployeeNameIDBtnLayout = new javax.swing.GroupLayout(addEmployeeNameIDBtn);
+        addEmployeeNameIDBtn.setLayout(addEmployeeNameIDBtnLayout);
+        addEmployeeNameIDBtnLayout.setHorizontalGroup(
+            addEmployeeNameIDBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(addEmployeeNameIDBtnLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(addEmployeeNameIDNumBtn)
+                .addComponent(addEmployeeNameIDNumLabel)
                 .addContainerGap(30, Short.MAX_VALUE))
         );
-        loginPanel3Layout.setVerticalGroup(
-            loginPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(addEmployeeNameIDNumBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        addEmployeeNameIDBtnLayout.setVerticalGroup(
+            addEmployeeNameIDBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(addEmployeeNameIDNumLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -140,7 +140,7 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
                     .addComponent(addEmployeeIDNumlabel)
                     .addComponent(addEmployeeNamelabel)
                     .addComponent(addEmployeeNameTxtField)
-                    .addComponent(loginPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(addEmployeeNameIDBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -155,7 +155,7 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(addEmployeeIDNumTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addComponent(loginPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(addEmployeeNameIDBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
@@ -178,15 +178,15 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void addEmployeeBackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addEmployeeBackBtnMouseClicked
+    private void BackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackBtnMouseClicked
         AddScreen screen = new AddScreen();
         screen.show();
         this.dispose();
-    }//GEN-LAST:event_addEmployeeBackBtnMouseClicked
+    }//GEN-LAST:event_BackBtnMouseClicked
 
-    private void loginPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginPanel3MouseClicked
+    private void addEmployeeNameIDBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addEmployeeNameIDBtnMouseClicked
         
-    }//GEN-LAST:event_loginPanel3MouseClicked
+    }//GEN-LAST:event_addEmployeeNameIDBtnMouseClicked
 
     /**
      * @param args the command line arguments
@@ -225,16 +225,16 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel addEmployeeBackBtn;
+    private javax.swing.JLabel BackBtn;
     private javax.swing.JTextField addEmployeeIDNumTxtField;
     private javax.swing.JLabel addEmployeeIDNumlabel;
-    private javax.swing.JLabel addEmployeeNameIDNumBtn;
+    private javax.swing.JPanel addEmployeeNameIDBtn;
+    private javax.swing.JLabel addEmployeeNameIDNumLabel;
     private javax.swing.JTextField addEmployeeNameTxtField;
     private javax.swing.JLabel addEmployeeNamelabel;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel loginPanel3;
     // End of variables declaration//GEN-END:variables
 }

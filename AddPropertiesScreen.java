@@ -27,7 +27,7 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        addPropertyBackBtn = new javax.swing.JLabel();
+        BackBtn = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         addPropertyLabel = new javax.swing.JLabel();
@@ -45,13 +45,13 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
         jLabel4.setForeground(java.awt.Color.red);
         jLabel4.setText("Property");
 
-        addPropertyBackBtn.setBackground(java.awt.Color.white);
-        addPropertyBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        addPropertyBackBtn.setForeground(java.awt.Color.white);
-        addPropertyBackBtn.setText("<");
-        addPropertyBackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        BackBtn.setBackground(java.awt.Color.white);
+        BackBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        BackBtn.setForeground(java.awt.Color.white);
+        BackBtn.setText("<");
+        BackBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                addPropertyBackBtnMouseClicked(evt);
+                BackBtnMouseClicked(evt);
             }
         });
 
@@ -68,7 +68,7 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addComponent(addPropertyBackBtn))
+                        .addComponent(BackBtn))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(94, 94, 94)
                         .addComponent(jLabel8)))
@@ -82,7 +82,7 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(addPropertyBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -166,11 +166,11 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void addPropertyBackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addPropertyBackBtnMouseClicked
+    private void BackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackBtnMouseClicked
         AddScreen screen = new AddScreen();
         screen.show();
         this.dispose();
-    }//GEN-LAST:event_addPropertyBackBtnMouseClicked
+    }//GEN-LAST:event_BackBtnMouseClicked
 
     private void addPropertyNameBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addPropertyNameBtnMouseClicked
         
@@ -213,7 +213,7 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel addPropertyBackBtn;
+    private javax.swing.JLabel BackBtn;
     private javax.swing.JLabel addPropertyLabel;
     private javax.swing.JPanel addPropertyNameBtn;
     private javax.swing.JLabel addPropertyNameLabel;

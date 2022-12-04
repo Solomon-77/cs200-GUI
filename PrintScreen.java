@@ -27,14 +27,14 @@ public class PrintScreen extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        backBtn = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        prntCustomerBtn = new javax.swing.JPanel();
+        prntCustomerLabel = new javax.swing.JLabel();
+        prntBookingsBtn = new javax.swing.JPanel();
+        prntBookingsLabel = new javax.swing.JLabel();
+        prntPropertiesBtn = new javax.swing.JPanel();
+        prntPropertiesLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,13 +45,13 @@ public class PrintScreen extends javax.swing.JFrame {
         jLabel4.setForeground(java.awt.Color.red);
         jLabel4.setText("Print");
 
-        jLabel5.setBackground(java.awt.Color.white);
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel5.setForeground(java.awt.Color.white);
-        jLabel5.setText("<");
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+        backBtn.setBackground(java.awt.Color.white);
+        backBtn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        backBtn.setForeground(java.awt.Color.white);
+        backBtn.setText("<");
+        backBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel5MouseClicked(evt);
+                backBtnMouseClicked(evt);
             }
         });
 
@@ -66,14 +66,14 @@ public class PrintScreen extends javax.swing.JFrame {
                         .addComponent(jLabel4))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(jLabel5)))
+                        .addComponent(backBtn)))
                 .addContainerGap(92, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66)
                 .addComponent(jLabel4)
                 .addContainerGap(116, Short.MAX_VALUE))
@@ -81,85 +81,85 @@ public class PrintScreen extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(76, 17, 123));
 
-        jPanel5.setBackground(new java.awt.Color(76, 17, 123));
-        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
-        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+        prntCustomerBtn.setBackground(new java.awt.Color(76, 17, 123));
+        prntCustomerBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        prntCustomerBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel5MouseClicked(evt);
+                prntCustomerBtnMouseClicked(evt);
             }
         });
 
-        jLabel1.setBackground(java.awt.Color.white);
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setForeground(java.awt.Color.white);
-        jLabel1.setText("Customer");
+        prntCustomerLabel.setBackground(java.awt.Color.white);
+        prntCustomerLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        prntCustomerLabel.setForeground(java.awt.Color.white);
+        prntCustomerLabel.setText("Customer");
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout prntCustomerBtnLayout = new javax.swing.GroupLayout(prntCustomerBtn);
+        prntCustomerBtn.setLayout(prntCustomerBtnLayout);
+        prntCustomerBtnLayout.setHorizontalGroup(
+            prntCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(prntCustomerBtnLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel1)
+                .addComponent(prntCustomerLabel)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+        prntCustomerBtnLayout.setVerticalGroup(
+            prntCustomerBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(prntCustomerLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
         );
 
-        jPanel8.setBackground(new java.awt.Color(76, 17, 123));
-        jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
-        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        prntBookingsBtn.setBackground(new java.awt.Color(76, 17, 123));
+        prntBookingsBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        prntBookingsBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel8MouseClicked(evt);
+                prntBookingsBtnMouseClicked(evt);
             }
         });
 
-        jLabel2.setBackground(java.awt.Color.white);
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("Bookings");
+        prntBookingsLabel.setBackground(java.awt.Color.white);
+        prntBookingsLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        prntBookingsLabel.setForeground(java.awt.Color.white);
+        prntBookingsLabel.setText("Bookings");
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout prntBookingsBtnLayout = new javax.swing.GroupLayout(prntBookingsBtn);
+        prntBookingsBtn.setLayout(prntBookingsBtnLayout);
+        prntBookingsBtnLayout.setHorizontalGroup(
+            prntBookingsBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(prntBookingsBtnLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addComponent(jLabel2)
+                .addComponent(prntBookingsLabel)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+        prntBookingsBtnLayout.setVerticalGroup(
+            prntBookingsBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(prntBookingsLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
         );
 
-        jPanel9.setBackground(new java.awt.Color(76, 17, 123));
-        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
-        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
+        prntPropertiesBtn.setBackground(new java.awt.Color(76, 17, 123));
+        prntPropertiesBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        prntPropertiesBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel9MouseClicked(evt);
+                prntPropertiesBtnMouseClicked(evt);
             }
         });
 
-        jLabel3.setBackground(java.awt.Color.white);
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(java.awt.Color.white);
-        jLabel3.setText("Properties");
+        prntPropertiesLabel.setBackground(java.awt.Color.white);
+        prntPropertiesLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        prntPropertiesLabel.setForeground(java.awt.Color.white);
+        prntPropertiesLabel.setText("Properties");
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout prntPropertiesBtnLayout = new javax.swing.GroupLayout(prntPropertiesBtn);
+        prntPropertiesBtn.setLayout(prntPropertiesBtnLayout);
+        prntPropertiesBtnLayout.setHorizontalGroup(
+            prntPropertiesBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(prntPropertiesBtnLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addComponent(jLabel3)
+                .addComponent(prntPropertiesLabel)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+        prntPropertiesBtnLayout.setVerticalGroup(
+            prntPropertiesBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(prntPropertiesLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -169,20 +169,20 @@ public class PrintScreen extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(68, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(prntBookingsBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(prntCustomerBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(prntPropertiesBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(68, 68, 68))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(45, 45, 45)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(prntCustomerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(prntBookingsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(prntPropertiesBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(60, Short.MAX_VALUE))
         );
 
@@ -205,29 +205,29 @@ public class PrintScreen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
+    private void prntCustomerBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prntCustomerBtnMouseClicked
        PrintCustomer customer = new PrintCustomer();
        customer.show();
        this.dispose();
-    }//GEN-LAST:event_jPanel5MouseClicked
+    }//GEN-LAST:event_prntCustomerBtnMouseClicked
 
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+    private void backBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backBtnMouseClicked
         Menu main = new Menu();
         main.show();
         this.dispose();
-    }//GEN-LAST:event_jLabel5MouseClicked
+    }//GEN-LAST:event_backBtnMouseClicked
 
-    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
+    private void prntBookingsBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prntBookingsBtnMouseClicked
         PrintBookings bookings = new PrintBookings();
         bookings.show();
         this.dispose();
-    }//GEN-LAST:event_jPanel8MouseClicked
+    }//GEN-LAST:event_prntBookingsBtnMouseClicked
 
-    private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
+    private void prntPropertiesBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prntPropertiesBtnMouseClicked
         PrintProperties properties = new PrintProperties();
         properties.show();
         this.dispose();
-    }//GEN-LAST:event_jPanel9MouseClicked
+    }//GEN-LAST:event_prntPropertiesBtnMouseClicked
 
     /**
      * @param args the command line arguments
@@ -266,15 +266,15 @@ public class PrintScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel backBtn;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel prntBookingsBtn;
+    private javax.swing.JLabel prntBookingsLabel;
+    private javax.swing.JPanel prntCustomerBtn;
+    private javax.swing.JLabel prntCustomerLabel;
+    private javax.swing.JPanel prntPropertiesBtn;
+    private javax.swing.JLabel prntPropertiesLabel;
     // End of variables declaration//GEN-END:variables
 }
