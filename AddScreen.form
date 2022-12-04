@@ -165,6 +165,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addEmployeePnlMouseClicked"/>
+          </Events>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -212,6 +215,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addCustomerPnlMouseClicked"/>
+          </Events>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -259,6 +265,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addPropertyBtnMouseClicked"/>
+          </Events>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -306,6 +315,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addBookingBtnMouseClicked"/>
+          </Events>
 
           <Layout>
             <DimensionLayout dim="0">

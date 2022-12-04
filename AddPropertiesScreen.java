@@ -36,6 +36,7 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
         addPropertyNameLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(49, 11, 80));
 
@@ -91,7 +92,8 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(76, 17, 123));
 
-        addPropertyLabel.setForeground(new java.awt.Color(255, 0, 0));
+        addPropertyLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        addPropertyLabel.setForeground(java.awt.Color.white);
         addPropertyLabel.setText("Name of Property");
 
         addPropertyNameBtn.setBackground(new java.awt.Color(76, 17, 123));
@@ -142,7 +144,7 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
                 .addComponent(addPropertyTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(51, 51, 51)
                 .addComponent(addPropertyNameBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -165,8 +167,8 @@ public class AddPropertiesScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void addPropertyBackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addPropertyBackBtnMouseClicked
-        Menu main = new Menu();
-        main.show();
+        AddScreen screen = new AddScreen();
+        screen.show();
         this.dispose();
     }//GEN-LAST:event_addPropertyBackBtnMouseClicked
 

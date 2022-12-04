@@ -38,6 +38,7 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
         addEmployeeNameIDNumBtn = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(49, 11, 80));
 
@@ -93,10 +94,12 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(76, 17, 123));
 
-        addEmployeeNamelabel.setForeground(new java.awt.Color(255, 0, 0));
+        addEmployeeNamelabel.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        addEmployeeNamelabel.setForeground(java.awt.Color.white);
         addEmployeeNamelabel.setText("Name of Employee");
 
-        addEmployeeIDNumlabel.setForeground(new java.awt.Color(255, 0, 0));
+        addEmployeeIDNumlabel.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        addEmployeeIDNumlabel.setForeground(java.awt.Color.white);
         addEmployeeIDNumlabel.setText("Employee ID Number");
 
         loginPanel3.setBackground(new java.awt.Color(76, 17, 123));
@@ -153,7 +156,7 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
                 .addComponent(addEmployeeIDNumTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(loginPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -176,8 +179,8 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void addEmployeeBackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addEmployeeBackBtnMouseClicked
-        Menu main = new Menu();
-        main.show();
+        AddScreen screen = new AddScreen();
+        screen.show();
         this.dispose();
     }//GEN-LAST:event_addEmployeeBackBtnMouseClicked
 
@@ -232,12 +235,6 @@ public class AddEmployeeScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel loginLabel;
-    private javax.swing.JLabel loginLabel1;
-    private javax.swing.JLabel loginLabel2;
-    private javax.swing.JPanel loginPanel;
-    private javax.swing.JPanel loginPanel1;
-    private javax.swing.JPanel loginPanel2;
     private javax.swing.JPanel loginPanel3;
     // End of variables declaration//GEN-END:variables
 }

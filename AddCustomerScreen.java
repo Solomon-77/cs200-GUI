@@ -36,6 +36,7 @@ public class AddCustomerScreen extends javax.swing.JFrame {
         addEmployeeNameIDNumBtn = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(49, 11, 80));
 
@@ -90,7 +91,8 @@ public class AddCustomerScreen extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(76, 17, 123));
 
-        addCustomerNameLabel.setForeground(new java.awt.Color(255, 0, 0));
+        addCustomerNameLabel.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        addCustomerNameLabel.setForeground(java.awt.Color.white);
         addCustomerNameLabel.setText("Name of Customer");
 
         loginPanel3.setBackground(new java.awt.Color(76, 17, 123));
@@ -141,7 +143,7 @@ public class AddCustomerScreen extends javax.swing.JFrame {
                 .addComponent(addCustomerNameTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(51, 51, 51)
                 .addComponent(loginPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -164,8 +166,8 @@ public class AddCustomerScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void addCustomerBackBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addCustomerBackBtnMouseClicked
-        Menu main = new Menu();
-        main.show();
+        AddScreen screen = new AddScreen();
+        screen.show();
         this.dispose();
     }//GEN-LAST:event_addCustomerBackBtnMouseClicked
 

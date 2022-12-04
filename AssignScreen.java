@@ -39,6 +39,7 @@ public class AssignScreen extends javax.swing.JFrame {
         jComboBox3 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(49, 11, 80));
 

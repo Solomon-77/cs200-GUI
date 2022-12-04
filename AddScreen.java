@@ -14,6 +14,7 @@ public class AddScreen extends javax.swing.JFrame {
      */
     public AddScreen() {
         initComponents();
+        setResizable(false);
     }
 
     /**
@@ -85,6 +86,11 @@ public class AddScreen extends javax.swing.JFrame {
 
         addEmployeePnl.setBackground(new java.awt.Color(76, 17, 123));
         addEmployeePnl.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        addEmployeePnl.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addEmployeePnlMouseClicked(evt);
+            }
+        });
 
         addEmployeeLabel.setBackground(java.awt.Color.white);
         addEmployeeLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -107,6 +113,11 @@ public class AddScreen extends javax.swing.JFrame {
 
         addCustomerPnl.setBackground(new java.awt.Color(76, 17, 123));
         addCustomerPnl.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        addCustomerPnl.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addCustomerPnlMouseClicked(evt);
+            }
+        });
 
         addCustomerLabel.setBackground(java.awt.Color.white);
         addCustomerLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -129,6 +140,11 @@ public class AddScreen extends javax.swing.JFrame {
 
         addPropertyBtn.setBackground(new java.awt.Color(76, 17, 123));
         addPropertyBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        addPropertyBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addPropertyBtnMouseClicked(evt);
+            }
+        });
 
         addPropertyLabel.setBackground(java.awt.Color.white);
         addPropertyLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -151,6 +167,11 @@ public class AddScreen extends javax.swing.JFrame {
 
         addBookingBtn.setBackground(new java.awt.Color(76, 17, 123));
         addBookingBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        addBookingBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addBookingBtnMouseClicked(evt);
+            }
+        });
 
         addBookingPnl.setBackground(java.awt.Color.white);
         addBookingPnl.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -225,6 +246,30 @@ public class AddScreen extends javax.swing.JFrame {
         main.show();
         this.dispose();
     }//GEN-LAST:event_addBackPnlMouseClicked
+
+    private void addEmployeePnlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addEmployeePnlMouseClicked
+        AddEmployeeScreen employee = new AddEmployeeScreen();
+        employee.show();
+        this.dispose();
+    }//GEN-LAST:event_addEmployeePnlMouseClicked
+
+    private void addCustomerPnlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addCustomerPnlMouseClicked
+        AddCustomerScreen customer = new AddCustomerScreen();
+        customer.show();
+        this.dispose();
+    }//GEN-LAST:event_addCustomerPnlMouseClicked
+
+    private void addPropertyBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addPropertyBtnMouseClicked
+        AddPropertiesScreen properties = new AddPropertiesScreen();
+        properties.show();
+        this.dispose();
+    }//GEN-LAST:event_addPropertyBtnMouseClicked
+
+    private void addBookingBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBookingBtnMouseClicked
+        AddInspectionBooking inspection = new AddInspectionBooking();
+        inspection.show();
+        this.dispose();
+    }//GEN-LAST:event_addBookingBtnMouseClicked
 
     /**
      * @param args the command line arguments

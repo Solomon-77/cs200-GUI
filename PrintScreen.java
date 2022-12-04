@@ -110,6 +110,11 @@ public class PrintScreen extends javax.swing.JFrame {
 
         jPanel8.setBackground(new java.awt.Color(76, 17, 123));
         jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel8MouseClicked(evt);
+            }
+        });
 
         jLabel2.setBackground(java.awt.Color.white);
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -132,6 +137,11 @@ public class PrintScreen extends javax.swing.JFrame {
 
         jPanel9.setBackground(new java.awt.Color(76, 17, 123));
         jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(49, 11, 80), 2));
+        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel9MouseClicked(evt);
+            }
+        });
 
         jLabel3.setBackground(java.awt.Color.white);
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -196,7 +206,9 @@ public class PrintScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
-       
+       PrintCustomer customer = new PrintCustomer();
+       customer.show();
+       this.dispose();
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
@@ -204,6 +216,18 @@ public class PrintScreen extends javax.swing.JFrame {
         main.show();
         this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
+        PrintBookings bookings = new PrintBookings();
+        bookings.show();
+        this.dispose();
+    }//GEN-LAST:event_jPanel8MouseClicked
+
+    private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
+        PrintProperties properties = new PrintProperties();
+        properties.show();
+        this.dispose();
+    }//GEN-LAST:event_jPanel9MouseClicked
 
     /**
      * @param args the command line arguments
