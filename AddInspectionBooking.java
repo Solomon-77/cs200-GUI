@@ -26,8 +26,8 @@ public class AddInspectionBooking extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         addBookingDate = new javax.swing.JPanel();
         addBookingDateLabel = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         setDateLabel = new javax.swing.JLabel();
+        setDateTextField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -133,11 +133,10 @@ public class AddInspectionBooking extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(addBookingDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(setDateLabel)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(addBookingDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(setDateTextField))
                 .addContainerGap(61, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -145,9 +144,9 @@ public class AddInspectionBooking extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(63, 63, 63)
                 .addComponent(setDateLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(setDateTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(61, 61, 61)
                 .addComponent(addBookingDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
@@ -178,8 +177,7 @@ public class AddInspectionBooking extends javax.swing.JFrame {
     }//GEN-LAST:event_addPropertyBackBtnMouseClicked
 
     private void addBookingDateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addBookingDateMouseClicked
-        JOptionPane.showMessageDialog(addBookingDate, jDateChooser1.getCalendar().getTime());
-        System.out.println(jDateChooser1.getCalendar().getTime());
+   
     }//GEN-LAST:event_addBookingDateMouseClicked
 
     /**
@@ -222,12 +220,12 @@ public class AddInspectionBooking extends javax.swing.JFrame {
     private javax.swing.JPanel addBookingDate;
     private javax.swing.JLabel addBookingDateLabel;
     private javax.swing.JLabel addPropertyBackBtn;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel setDateLabel;
+    private javax.swing.JTextField setDateTextField;
     // End of variables declaration//GEN-END:variables
 }

@@ -66,6 +66,11 @@ public class PrintBookings extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(76, 17, 123));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.white, 2));
+        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel3MouseClicked(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(java.awt.Color.white);
@@ -87,6 +92,11 @@ public class PrintBookings extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(76, 17, 123));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.white, 2));
+        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel4MouseClicked(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(java.awt.Color.white);
@@ -195,6 +205,18 @@ public class PrintBookings extends javax.swing.JFrame {
         print.show();
         this.dispose();
     }//GEN-LAST:event_backButtonMouseClicked
+
+    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+        PrintProperties properties = new PrintProperties();
+        properties.show();
+        this.dispose();
+    }//GEN-LAST:event_jPanel3MouseClicked
+
+    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
+        PrintCustomer customer = new PrintCustomer();
+        customer.show();
+        this.dispose();
+    }//GEN-LAST:event_jPanel4MouseClicked
 
     /**
      * @param args the command line arguments
